@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>be.demmel.protocol</groupId>
+	<artifactId>ucp</artifactId>
+	<version>1.0.0_RC1-SNAPSHOT</version>
+	<name>${project.artifactId}</name>
+
+	<description>Implementation of the UCP protocol</description>
+
+	<distributionManagement>
+		<!-- Needed by the site plugin -->
+		<site>
+			<id>site</id>
+			<name>site</name>
+			<url>file://tmp</url>
+		</site>
+		<!-- Needed by the release plugin -->
+		<repository>
+			<id>repo</id>
+			<name>repo</name>
+			<url>file://tmp</url>
+		</repository>
+	</distributionManagement>
+
+	<properties>
+		<!-- Explicitly declaring the source encoding eliminates the following message: -->
+		<!-- [WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent! -->
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<java.source>1.7</java.source>
+		<java.target>1.7</java.target>
+		<java.debug>true</java.debug>
+		<java.optimize>true</java.optimize>
+		<java.verbose>false</java.verbose>
+	</properties>
+
+	<dependencies>
+		<!-- LOGBack for logging -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>1.6.4</version>
+		</dependency>
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-core</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-classic</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.codehaus.groovy</groupId>
+			<artifactId>groovy</artifactId>
+			<version>1.8.3</version>
+		</dependency>
+
+		<!-- The dates used are from Joda-time -->
+		<dependency>
+			<groupId>joda-time</groupId>
+			<artifactId>joda-time</artifactId>
+			<version>2.0</version>
+		</dependency>
+
+		<!-- Using Netty's ByteBuf to manipulate -->
+		<dependency>
+			<groupId>io.netty</groupId>
+			<artifactId>netty-buffer</artifactId>
+			<version>4.0.7.Final</version>
+		</dependency>
+
+		<!-- JUnit for testing -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.10</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.1</version>
+				<configuration>
+					<source>${java.source}</source>
+					<target>${java.target}</target>
+					<debug>${java.debug}</debug>
+					<optimize>${java.optimize}</optimize>
+					<verbose>${java.verbose}</verbose>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>
