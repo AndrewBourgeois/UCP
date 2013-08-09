@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>be.demmel.protocol</groupId>
 	<artifactId>ucp</artifactId>
-	<version>1.0.0_RC1-SNAPSHOT</version>
+	<version>1.0.0_RC1</version>
 	<name>${project.artifactId}</name>
 
 	<description>Implementation of the UCP protocol</description>
@@ -26,7 +26,7 @@
 	<scm>
 		<!-- Used by the release plugin -->
 		<connection>scm:git:git@github.com:AndrewBourgeois/UCP.git</connection>
-		<tag>HEAD</tag>
+		<tag>ucp-1.0.0_RC1</tag>
 	</scm>
 
 	<properties>
