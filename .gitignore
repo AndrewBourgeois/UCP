@@ -1,0 +1,6 @@
+.project
+.classpath
+nbactions.xml
+target/
+.settings/
+*~
