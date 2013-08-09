@@ -22,6 +22,12 @@
 			<url>file://tmp</url>
 		</repository>
 	</distributionManagement>
+	
+	<scm>
+		<!-- Used by the release plugin -->
+		<connection>scm:git:git@github.com:AndrewBourgeois/UCP.git</connection>
+		<tag>HEAD</tag>
+	</scm>
 
 	<properties>
 		<!-- Explicitly declaring the source encoding eliminates the following message: -->
@@ -91,6 +97,18 @@
 					<debug>${java.debug}</debug>
 					<optimize>${java.optimize}</optimize>
 					<verbose>${java.verbose}</verbose>
+				</configuration>
+			</plugin>
+			
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-release-plugin</artifactId>
+				<version>2.4</version>
+				<configuration>
+					<!-- tagBase>https://test.com/svn/tags/</tagBase -->
+					<!-- The goals must be set to deploy to avoid deploy-site running, which tries to deploy the site -->
+					<goals>deploy</goals>
+					<autoVersionSubmodules>true</autoVersionSubmodules>
 				</configuration>
 			</plugin>
 		</plugins>
