@@ -37,4 +37,23 @@ public class O_01_CallInput implements UCPOperation {
 	public String getaMsg() {
 		return aMsg;
 	}
+
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("O_01_CallInput [adc=");
+		builder.append(adc);
+		builder.append(", oadc=");
+		builder.append(oadc);
+		builder.append(", ac=");
+		builder.append(ac);
+		builder.append(", mt=");
+		builder.append(mt);
+		builder.append(", nMsg=");
+		builder.append(nMsg);
+		builder.append(", aMsg=");
+		builder.append(aMsg);
+		builder.append("]");
+		return builder.toString();
+	}
 }

@@ -220,4 +220,81 @@ public class O_5x_AbstractDataType implements UCPOperation {
 	public String getRes5() {
 		return res5;
 	}
+
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("O_5x_AbstractDataType [adc=");
+		builder.append(adc);
+		builder.append(", oadc=");
+		builder.append(oadc);
+		builder.append(", ac=");
+		builder.append(ac);
+		builder.append(", nrq=");
+		builder.append(nrq);
+		builder.append(", nadc=");
+		builder.append(nadc);
+		builder.append(", nt=");
+		builder.append(nt);
+		builder.append(", npid=");
+		builder.append(npid);
+		builder.append(", lrq=");
+		builder.append(lrq);
+		builder.append(", lrad=");
+		builder.append(lrad);
+		builder.append(", lpid=");
+		builder.append(lpid);
+		builder.append(", dd=");
+		builder.append(dd);
+		builder.append(", ddt=");
+		builder.append(ddt);
+		builder.append(", vp=");
+		builder.append(vp);
+		builder.append(", rpid=");
+		builder.append(rpid);
+		builder.append(", scts=");
+		builder.append(scts);
+		builder.append(", dst=");
+		builder.append(dst);
+		builder.append(", rsn=");
+		builder.append(rsn);
+		builder.append(", dscts=");
+		builder.append(dscts);
+		builder.append(", mt=");
+		builder.append(mt);
+		builder.append(", nmsg=");
+		builder.append(nmsg);
+		builder.append(", amsg=");
+		builder.append(amsg);
+		builder.append(", nb=");
+		builder.append(nb);
+		builder.append(", tmsg=");
+		builder.append(tmsg);
+		builder.append(", mms=");
+		builder.append(mms);
+		builder.append(", pr=");
+		builder.append(pr);
+		builder.append(", dc=");
+		builder.append(dc);
+		builder.append(", mcl=");
+		builder.append(mcl);
+		builder.append(", rpi=");
+		builder.append(rpi);
+		builder.append(", cpg=");
+		builder.append(cpg);
+		builder.append(", rply=");
+		builder.append(rply);
+		builder.append(", otoa=");
+		builder.append(otoa);
+		builder.append(", hplmn=");
+		builder.append(hplmn);
+		builder.append(", xser=");
+		builder.append(xser);
+		builder.append(", res4=");
+		builder.append(res4);
+		builder.append(", res5=");
+		builder.append(res5);
+		builder.append("]");
+		return builder.toString();
+	}
 }

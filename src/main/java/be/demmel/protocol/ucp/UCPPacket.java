@@ -35,4 +35,14 @@ public class UCPPacket {
 	public UCPOperation getData() {
 		return data;
 	}
+
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder("UCPPacket [header=");
+		builder.append(header);
+		builder.append(", data=");
+		builder.append(data);
+		builder.append("]");
+		return builder.toString();
+	}
 }

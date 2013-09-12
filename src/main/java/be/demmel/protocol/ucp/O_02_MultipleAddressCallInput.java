@@ -42,4 +42,25 @@ public class O_02_MultipleAddressCallInput implements UCPOperation {
 	public String getaMsg() {
 		return aMsg;
 	}
+
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("O_02_MultipleAddressCallInput [npl=");
+		builder.append(npl);
+		builder.append(", rads=");
+		builder.append(rads);
+		builder.append(", oadc=");
+		builder.append(oadc);
+		builder.append(", ac=");
+		builder.append(ac);
+		builder.append(", mt=");
+		builder.append(mt);
+		builder.append(", nMsg=");
+		builder.append(nMsg);
+		builder.append(", aMsg=");
+		builder.append(aMsg);
+		builder.append("]");
+		return builder.toString();
+	}
 }

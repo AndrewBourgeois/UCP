@@ -18,4 +18,15 @@ public class O_31_Alert implements UCPOperation {
 	public String getPid() {
 		return pid;
 	}
+
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("O_31_Alert [adc=");
+		builder.append(adc);
+		builder.append(", pid=");
+		builder.append(pid);
+		builder.append("]");
+		return builder.toString();
+	}
 }

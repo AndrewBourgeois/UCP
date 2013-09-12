@@ -66,4 +66,31 @@ public class O_30_SmsMessageTransfer implements UCPOperation {
 	public String getAmsg() {
 		return amsg;
 	}
+
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("O_30_SmsMessageTransfer [adc=");
+		builder.append(adc);
+		builder.append(", oadc=");
+		builder.append(oadc);
+		builder.append(", ac=");
+		builder.append(ac);
+		builder.append(", nrq=");
+		builder.append(nrq);
+		builder.append(", nad=");
+		builder.append(nad);
+		builder.append(", npid=");
+		builder.append(npid);
+		builder.append(", dd=");
+		builder.append(dd);
+		builder.append(", ddt=");
+		builder.append(ddt);
+		builder.append(", vp=");
+		builder.append(vp);
+		builder.append(", amsg=");
+		builder.append(amsg);
+		builder.append("]");
+		return builder.toString();
+	}
 }

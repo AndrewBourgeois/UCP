@@ -77,4 +77,35 @@ public class O_6x_AbstractDataType implements UCPOperation {
 	public String getRes1() {
 		return res1;
 	}
+
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("O_6x_AbstractDataType [oadc=");
+		builder.append(oadc);
+		builder.append(", oton=");
+		builder.append(oton);
+		builder.append(", onpi=");
+		builder.append(onpi);
+		builder.append(", styp=");
+		builder.append(styp);
+		builder.append(", pwd=");
+		builder.append(pwd);
+		builder.append(", npwd=");
+		builder.append(npwd);
+		builder.append(", vers=");
+		builder.append(vers);
+		builder.append(", ladc=");
+		builder.append(ladc);
+		builder.append(", lton=");
+		builder.append(lton);
+		builder.append(", lnpi=");
+		builder.append(lnpi);
+		builder.append(", opid=");
+		builder.append(opid);
+		builder.append(", res1=");
+		builder.append(res1);
+		builder.append("]");
+		return builder.toString();
+	}
 }

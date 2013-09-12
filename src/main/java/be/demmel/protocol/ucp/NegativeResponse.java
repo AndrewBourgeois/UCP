@@ -16,4 +16,15 @@ public class NegativeResponse implements UCPOperation {
 	public String getSm() {
 		return sm;
 	}
+
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("NegativeResponse [ec=");
+		builder.append(ec);
+		builder.append(", sm=");
+		builder.append(sm);
+		builder.append("]");
+		return builder.toString();
+	}
 }

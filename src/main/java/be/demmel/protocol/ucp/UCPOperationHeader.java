@@ -29,4 +29,16 @@ public class UCPOperationHeader {
 	public UCPOperationType getOperation() {
 		return operation;
 	}
+
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder("UCPOperationHeader [trn=");
+		builder.append(trn);
+		builder.append(", type=");
+		builder.append(type);
+		builder.append(", operation=");
+		builder.append(operation);
+		builder.append("]");
+		return builder.toString();
+	}
 }

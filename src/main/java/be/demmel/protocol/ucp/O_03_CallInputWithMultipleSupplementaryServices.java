@@ -109,4 +109,45 @@ public class O_03_CallInputWithMultipleSupplementaryServices implements UCPOpera
 	public String getaMsg() {
 		return aMsg;
 	}
+
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("O_03_CallInputWithMultipleSupplementaryServices [rad=");
+		builder.append(rad);
+		builder.append(", oadc=");
+		builder.append(oadc);
+		builder.append(", ac=");
+		builder.append(ac);
+		builder.append(", npl=");
+		builder.append(npl);
+		builder.append(", gas=");
+		builder.append(gas);
+		builder.append(", rp=");
+		builder.append(rp);
+		builder.append(", pr=");
+		builder.append(pr);
+		builder.append(", lpr=");
+		builder.append(lpr);
+		builder.append(", ur=");
+		builder.append(ur);
+		builder.append(", lur=");
+		builder.append(lur);
+		builder.append(", rc=");
+		builder.append(rc);
+		builder.append(", lrc=");
+		builder.append(lrc);
+		builder.append(", dd=");
+		builder.append(dd);
+		builder.append(", ddt=");
+		builder.append(ddt);
+		builder.append(", mt=");
+		builder.append(mt);
+		builder.append(", nMsg=");
+		builder.append(nMsg);
+		builder.append(", aMsg=");
+		builder.append(aMsg);
+		builder.append("]");
+		return builder.toString();
+	}
 }
